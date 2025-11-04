@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zoomcamp-fastapi"
+version = "0.1.0"
+description = "FastAPI app for lead prediction"
+authors = [{name = "Your Name", email = "your.email@example.com"}]
+requires-python = ">=3.8"
+dependencies = [
+    "fastapi",
+    "uvicorn[standard]",
+    "pandas",
+    "scikit-learn",
+    "poetry"  # if you want to use poetry, or remove if not
+]
