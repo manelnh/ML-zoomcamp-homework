@@ -14,9 +14,10 @@ async def predict(request: Request):
     converted = prob >= 0.5
     return JSONResponse({"converted_probability": float(prob), "converted": bool(converted)})
 
-#uvicorn predict_lead:app --host 0.0.0.0 --port 9696 
+#uvicorn predict_lead:app --host 0.0.0.0 --port 9697
 #command line to run web service using FastAPI uvicorn 
 #FastAPI is the web framework that you use to build the API or web service itself.
 #Uvicorn serves as the interface between the web and your application code.
+
 
 
